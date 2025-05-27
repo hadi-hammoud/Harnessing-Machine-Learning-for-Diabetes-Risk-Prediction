@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Polyuria &le; 0.5<br/>gini = 0.481<br/>samples = 416<br/>value = [167, 249]<br/>class = Positive>, fillcolor="#bedff6"] ;
+1 [label=<Gender &le; 0.5<br/>gini = 0.399<br/>samples = 214<br/>value = [155.0, 59.0]<br/>class = Negative>, fillcolor="#efb184"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gini = 0.44<br/>samples = 49<br/>value = [16.0, 33.0]<br/>class = Positive>, fillcolor="#99cdf2"] ;
+1 -> 2 ;
+3 [label=<Polydipsia &le; 0.5<br/>gini = 0.265<br/>samples = 165<br/>value = [139.0, 26.0]<br/>class = Negative>, fillcolor="#ea995e"] ;
+1 -> 3 ;
+4 [label=<Irritability &le; 0.5<br/>gini = 0.162<br/>samples = 146<br/>value = [133, 13]<br/>class = Negative>, fillcolor="#e88d4c"] ;
+3 -> 4 ;
+5 [label=<weakness &le; 0.5<br/>gini = 0.089<br/>samples = 129<br/>value = [123, 6]<br/>class = Negative>, fillcolor="#e68743"] ;
+4 -> 5 ;
+6 [label=<gini = 0.027<br/>samples = 72<br/>value = [71, 1]<br/>class = Negative>, fillcolor="#e5833c"] ;
+5 -> 6 ;
+7 [label=<gini = 0.16<br/>samples = 57<br/>value = [52, 5]<br/>class = Negative>, fillcolor="#e88d4c"] ;
+5 -> 7 ;
+8 [label=<gini = 0.484<br/>samples = 17<br/>value = [10, 7]<br/>class = Negative>, fillcolor="#f7d9c4"] ;
+4 -> 8 ;
+9 [label=<gini = 0.432<br/>samples = 19<br/>value = [6, 13]<br/>class = Positive>, fillcolor="#94caf1"] ;
+3 -> 9 ;
+10 [label=<Age &le; 66.5<br/>gini = 0.112<br/>samples = 202<br/>value = [12, 190]<br/>class = Positive>, fillcolor="#46a3e7"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label=<Obesity &le; 0.5<br/>gini = 0.034<br/>samples = 176<br/>value = [3, 173]<br/>class = Positive>, fillcolor="#3c9fe5"] ;
+10 -> 11 ;
+12 [label=<gini = 0.0<br/>samples = 142<br/>value = [0, 142]<br/>class = Positive>, fillcolor="#399de5"] ;
+11 -> 12 ;
+13 [label=<gini = 0.161<br/>samples = 34<br/>value = [3, 31]<br/>class = Positive>, fillcolor="#4ca6e8"] ;
+11 -> 13 ;
+14 [label=<gini = 0.453<br/>samples = 26<br/>value = [9, 17]<br/>class = Positive>, fillcolor="#a2d1f3"] ;
+10 -> 14 ;
+}
